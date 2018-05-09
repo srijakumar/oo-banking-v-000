@@ -26,7 +26,7 @@ attr_reader :sender, :receiver
   end
 
   def reverse_transfer
-    if !execute_transaction
+    if execute_transaction
       @status = "reversed"
     end
     # if valid? && @sender.balance > amount && @status == "complete"
