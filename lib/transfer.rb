@@ -18,7 +18,6 @@ attr_reader :sender, :receiver
     if @status == "complete"
       @sender.balance -= amount
       @receiver.balance += amount
-
     end
   end
 
