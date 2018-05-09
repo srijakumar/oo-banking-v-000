@@ -10,6 +10,9 @@ attr_reader :sender, :receiver
     @status = "pending"
   end
 
+  def valid?
+    @sender.valid? && @receiver.valid?
+  end
 
 
 end
